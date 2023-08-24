@@ -1,0 +1,23 @@
+main.weatherScreen__content_container {
+  min-height: 91.1dvh;
+  padding: 2rem;
+}
+
+footer {
+  text-align: center;
+  margin-block: -1rem 0.5rem;
+}
+
+footer img {
+  width: 2rem;
+  margin-block-end: -0.5rem;
+}
+
+footer a {
+  color: white;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  letter-spacing: 1px;
+  font-style: italic;
+  cursor: pointer;
+}

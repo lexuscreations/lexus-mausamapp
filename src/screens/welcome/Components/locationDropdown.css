@@ -1,0 +1,95 @@
+.location__select_dropdownFldCustomContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.location__select_dropdown__selector {
+  top: -100px;
+  cursor: pointer;
+  padding: 10px 36px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.location__select_dropdown__selector,
+.location__select_dropdown__options {
+  border-radius: 18px;
+  color: rgba(18, 18, 43, 0.67);
+  background: #f0f0f0;
+  font-weight: 600;
+  width: 80%;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  border: 1px solid #ccc;
+  display: flex;
+  position: absolute;
+}
+
+.location__select_dropdown__options {
+  flex-direction: column;
+  align-items: self-start;
+  top: -50px;
+  justify-content: center;
+  z-index: 10;
+}
+
+.location__select_dropdown__options .option {
+  width: 100%;
+  cursor: pointer;
+  color: rgba(18, 18, 43, 0.67);
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  padding: 10px 36px;
+  border-radius: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.location__select_dropdown__options .option.selected {
+  background-color: #14317940;
+  color: #1b2533;
+}
+
+.location__select_dropdown__options .option:hover {
+  background-color: #0b1f5082;
+  color: #1b2533;
+}
+
+.location__select_dropdown__options .option:nth-child(2) {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.location__select_dropdown__options .option:nth-child(2)::before {
+  content: "";
+  display: block;
+  height: 1.2px;
+  width: 70%;
+  background-color: #3a4759;
+  align-self: center;
+  top: 0;
+  position: absolute;
+}
+
+.location__select_dropdown__options .option:nth-child(2)::after {
+  content: "";
+  display: block;
+  height: 1.2px;
+  width: 70%;
+  background-color: #3a4759;
+  align-self: center;
+  bottom: 0;
+  position: absolute;
+}
+
+.location__select_dropdown__selector img {
+  width: 18px;
+  transition: all 0.3s ease-in-out;
+  user-select: none !important;
+}

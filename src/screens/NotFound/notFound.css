@@ -1,0 +1,38 @@
+.notFoundScreen {
+  text-align: center;
+}
+
+.notFoundScreen > h1 {
+  line-height: 1;
+  font-family: auto;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.notFoundScreen > h2 {
+  font-size: 16px;
+  color: #828282;
+}
+
+.notFoundScreen > button {
+  background-color: #202b3b;
+  border: none;
+  outline: none;
+  padding: 8px;
+  color: #6c8282;
+  font-weight: 700;
+  border-radius: 20px;
+  margin-block-start: 20px;
+  cursor: pointer;
+  box-shadow: 0 3px 3px 0px #212020;
+  transition: all 0.3s ease-in-out;
+}
+
+.notFoundScreen > button:hover {
+  transform: scale(1.1);
+}
+
+.notFoundScreen > button:active {
+  transform: scale(1);
+  box-shadow: inset 3px 3px 3px 0px #212020, inset -3px -3px 3px 0px #212020;
+}

@@ -1,0 +1,141 @@
+.weatherScreen__header__locationDropdown_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-inline-start: 0.25rem;
+  user-select: none;
+}
+
+.weatherScreen__header__location__select_dropdown__selector {
+  border-radius: 0.5rem;
+  color: rgba(18, 18, 43, 0.67);
+  background: #f0f0f0;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  border: 1px solid #ccc;
+  display: flex;
+  cursor: pointer;
+  padding: 6px 23px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.weatherScreen__header__location__select_dropdown__selector img {
+  width: 1rem;
+  transition: all 0.3s ease-in-out;
+  user-select: none !important;
+}
+
+.weatherScreen__header__location__select_dropdown__options {
+  top: 3.7rem;
+  border-radius: 0.5rem;
+  background: #f0f0f0;
+  width: 12.1rem;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+}
+
+.weatherScreen__header__location__select_dropdown__options .option {
+  cursor: pointer;
+  color: rgba(18, 18, 43, 0.67);
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  padding: 10px 36px;
+}
+
+.weatherScreen__header__location__select_dropdown__options .option:hover {
+  background-color: #0b1f5082;
+  color: #1b2533;
+}
+
+.weatherScreen__header__location__select_dropdown__options .option:active {
+  transform: scale(0.9);
+}
+
+.weatherScreen__header__location__select_dropdown__options
+  .option:nth-child(2) {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.weatherScreen__header__location__select_dropdown__options
+  .option:nth-child(2)::before {
+  content: "";
+  display: block;
+  height: 0.1rem;
+  width: 70%;
+  background-color: #3a4759;
+  align-self: center;
+  top: 0;
+  position: absolute;
+}
+
+.weatherScreen__header__location__select_dropdown__options
+  .option:nth-child(2)::after {
+  content: "";
+  display: block;
+  height: 0.1rem;
+  width: 70%;
+  background-color: #3a4759;
+  align-self: center;
+  bottom: 0;
+  position: absolute;
+}
+
+.weatherScreen__header__location__select_dropdown__options .option.selected {
+  background-color: #14317940;
+  color: #1b2533;
+}
+
+.weatherScreen__location__enter_city__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 12.1rem;
+  position: relative;
+}
+
+.weatherScreen__location__enter_city__container .closeBtn {
+  position: absolute;
+  font-size: 1.5rem;
+  color: #274a54;
+  font-weight: 900;
+  right: 1rem;
+  top: -2px;
+  cursor: pointer;
+}
+
+.weatherScreen__location__enter_city__inpFldEl {
+  font-size: 18px;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: rgba(18, 18, 43, 0.67);
+  background: #f0f0f0;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 6px 36px 6px 23px;
+}
+
+.weatherScreen__location__enter_city__inpFldEl:focus {
+  box-shadow: 1px 1px 4px 0px rgba(113, 132, 201, 0.69);
+  border: 2.5px solid #4b71ff;
+}
+
+.weatherScreen__location__enter_city__inpFldEl::placeholder {
+  color: rgba(137, 137, 137, 0.67);
+}
+
+@media only screen and (max-width: 800px) {
+  .weatherScreen__header__locationDropdown_container {
+    display: none;
+  }
+}

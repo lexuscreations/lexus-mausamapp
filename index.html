@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta
+      name="description"
+      content="Mausam-App - Your Weather Forecast Application with Air Purification Index"
+    />
+    <meta
+      name="keywords"
+      content="weather, forecast, Mausam-App, temperature, conditions, air purification index"
+    />
+    <meta name="author" content="lexuscreations" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: rgba(61, 77, 102, 0.99);
+        background: linear-gradient(
+          315deg,
+          #202b3b 0%,
+          rgba(61, 77, 102, 0.99) 100%
+        );
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        color: #ffffff;
+        line-height: 1.6;
+      }
+
+      .welcome_loading_screen_container {
+        position: fixed;
+        width: 100%;
+        min-height: 100dvh;
+        z-index: 1000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .welcome_loading_screen {
+        background-color: #0b131e;
+        min-height: 70dvh;
+        width: 80%;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100000;
+        position: relative;
+        flex-direction: column;
+        padding-block: 4.5vh 6vh;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      }
+
+      .welcome_loading_screen img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        filter: drop-shadow(3px 3px 11px #0009);
+        width: 18vh;
+      }
+
+      .welcome_loading_screen > h2.loadingSpinner {
+        width: 10vh;
+        height: 10vh;
+        border-top: 0.5vh solid rgb(52, 52, 228);
+        border-radius: 50%;
+        transition: transform 0.3s ease-in-out;
+        animation: welcome_loading_loadingRotate 0.5s linear infinite;
+      }
+
+      @keyframes welcome_loading_loadingRotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .welcome_loading_screen .appLogoTitle {
+        font-size: 5.5vh;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-align: center;
+      }
+
+      .welcome_loading_screen .appLogoTitle u {
+        text-decoration: none;
+        position: relative;
+      }
+
+      .welcome_loading_screen .appLogoTitle u::after {
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: #ffffff;
+        width: 100%;
+        height: 2.5px;
+        top: 4px;
+        left: 0;
+      }
+      #root {
+        display: none;
+      }
+    </style>
+    <title>Mausam-App - Weather Forecast</title>
+  </head>
+  <body>
+    <div class="welcome_loading_screen_container welcomeLoadingScreen">
+      <div class="welcome_loading_screen">
+        <div>
+          <h1 class="appLogoTitle">M<i>a</i><u>us</u><i>a</i>M</h1>
+        </div>
+        <img src="/welcome_favicon.png" alt="welcome-cat" />
+        <h2 class="loadingSpinner"></h2>
+      </div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

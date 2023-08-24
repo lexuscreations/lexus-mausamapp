@@ -1,0 +1,79 @@
+.weatherScreenHeader .switches-container {
+  width: 6rem;
+  border-radius: 3rem;
+  background: rgba(50, 94, 104, 0.73);
+  position: relative;
+  display: flex;
+  line-height: 3rem;
+  height: 50%;
+  user-select: none;
+}
+
+.weatherScreenHeader .switches-container input {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.weatherScreenHeader .switches-container label {
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-size: 1.3rem;
+  line-height: 1.69;
+}
+
+.weatherScreenHeader .switch-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 55%;
+  padding: 0.2rem;
+  z-index: 3;
+  transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.weatherScreenHeader .switches-container .switch {
+  border-radius: 3rem;
+  height: 100%;
+  background: rgb(95, 109, 116);
+}
+
+.weatherScreenHeader .switches-container .switch div {
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  color: white;
+  transition: opacity 0.2s cubic-bezier(0.77, 0, 0.175, 1) 0.125s;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  font-size: 1.3rem;
+  line-height: 1.77;
+}
+
+.weatherScreenHeader
+  .switches-container
+  input:nth-of-type(2):checked
+  ~ .switch-wrapper {
+  transform: translateX(80%);
+}
+
+.weatherScreenHeader
+  .switches-container
+  input:nth-of-type(1):checked
+  ~ .switch-wrapper
+  .switch
+  div:nth-of-type(1) {
+  opacity: 1;
+}
+
+.weatherScreenHeader
+  .switches-container
+  input:nth-of-type(2):checked
+  ~ .switch-wrapper
+  .switch
+  div:nth-of-type(2) {
+  opacity: 1;
+}
