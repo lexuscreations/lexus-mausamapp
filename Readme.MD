@@ -6,6 +6,8 @@
 
 ![WelcomeScreen__DropdownSelected](https://raw.githubusercontent.com/lexuscreations/lexus-mausamapp/main/screenshots/WelcomeScreen__DropdownSelected.png)
 
+<hr />
+
 ## Problems
 
 - ### There's some problem with loading screen, onLoad weatherScreen at initial its showing blank page for few seconds (depends on client and internet)
