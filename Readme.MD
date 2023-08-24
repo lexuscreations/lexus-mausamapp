@@ -1,7 +1,9 @@
 ## Screenshots
 
 [WeatherScreen](https://raw.githubusercontent.com/lexuscreations/lexus-mausamapp/main/screenshots/WeatherScreen.png)
+
 [WelcomeScreen__DropdownOpen](https://raw.githubusercontent.com/lexuscreations/lexus-mausamapp/main/screenshots/WelcomeScreen__DropdownOpen.png)
+
 [WelcomeScreen__DropdownSelected](https://raw.githubusercontent.com/lexuscreations/lexus-mausamapp/main/screenshots/WelcomeScreen__DropdownSelected.png)
 
 ## Problems
