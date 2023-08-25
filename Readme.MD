@@ -1,10 +1,12 @@
 ## Screenshots
 
-![WeatherScreen](https://raw.githubusercontent.com/lexuscreations/lexus-mausamapp/main/screenshots/WeatherScreen.png)
+![LoadingScreen](https://raw.githubusercontent.com/lexuscreations/mausam-weather-app/main/screenshots/LoadingScreen.png)
 
-![WelcomeScreen__DropdownOpen](https://raw.githubusercontent.com/lexuscreations/lexus-mausamapp/main/screenshots/WelcomeScreen__DropdownOpen.png)
+![WelcomeScreen-dropdown-open](https://raw.githubusercontent.com/lexuscreations/mausam-weather-app/main/screenshots/WelcomeScreen-dropdown-open.png)
 
-![WelcomeScreen__DropdownSelected](https://raw.githubusercontent.com/lexuscreations/lexus-mausamapp/main/screenshots/WelcomeScreen__DropdownSelected.png)
+![WelcomeScreen-dropdown-selected](https://raw.githubusercontent.com/lexuscreations/mausam-weather-app/main/screenshots/WelcomeScreen-dropdown-selected.png)
+
+![WeatherScreen](https://raw.githubusercontent.com/lexuscreations/mausam-weather-app/main/screenshots/WeatherScreen.png)
 
 <hr />
 
