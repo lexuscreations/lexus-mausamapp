@@ -6,6 +6,9 @@ Welcome to the Mausam Weather App – a beautifully designed weather application
 
 Take a visual tour of the Mausam Weather App:
 
+- ![plot](./screenshots/LoadingScreen.png)
+- ![plot]("./screenshots/LoadingScreen.png")
+
 - ![Loading Screen](https://raw.githubusercontent.com/lexuscreations/mausam-weather-app/main/screenshots/LoadingScreen.png)
 - ![Welcome Screen with Dropdown Open](https://raw.githubusercontent.com/lexuscreations/mausam-weather-app/main/screenshots/WelcomeScreen-dropdown-open.png)
 - ![Welcome Screen with Dropdown Selected](https://raw.githubusercontent.com/lexuscreations/mausam-weather-app/main/screenshots/WelcomeScreen-dropdown-selected.png)
